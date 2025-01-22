@@ -12,7 +12,7 @@ from .config import DevelopmentConfig,ProductionConfig
 
 
 def cors_setup(app):
-    CORS(app)
+    CORS(app, origin="https://gleaming-biscuit-6b1cf7.netlify.app/")
     
     @app.after_request
     def after_request(response):
