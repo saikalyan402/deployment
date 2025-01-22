@@ -49,6 +49,6 @@ class ProductionConfig(Config):
     ENV = "production"
     SQLALCHEMY_TRACK_MODIFICATIONS = Config.SQLALCHEMY_TRACK_MODIFICATIONS
     SECRET_KEY = Config.SECRET_KEY
-    SQLALCHEMY_DATABASE_URI =  "sqlite:////backend/instance/development.db"
+    SQLALCHEMY_DATABASE_URI = "sqlite:../instance/development.db"
     JWT_SECRET_KEY = Config.JWT_SECRET_KEY
     JWT_ACCESS_TOKEN_EXPIRES = Config.JWT_ACCESS_TOKEN_EXPIRES
